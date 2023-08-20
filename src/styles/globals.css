@@ -49,6 +49,7 @@ li {
   background-color: #FFCC1A;
   color: #1D1E20;
   padding: 0.5rem 1rem;
+  margin-left: 1rem;
   border-radius: 5px;
   font-size: 1rem;
   font-weight: 600;
@@ -85,7 +86,7 @@ hr {
 }
 
 .footer-container p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #9B9C9D;
 }
 
