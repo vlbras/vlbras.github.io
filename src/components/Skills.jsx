@@ -12,7 +12,7 @@ import {
 const Skills = () => {
   return (
     <div className="skills-container">
-      <h2>Best Skills</h2>
+      <h2>Top 8 Best Skills</h2>
       <div className="grid-skills">
         {/* <div className="skill-card angular">
                     <i className="fa-brands fa-angular"></i>

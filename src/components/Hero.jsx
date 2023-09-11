@@ -5,7 +5,7 @@ const Hero = () => {
             <div className="hero-text">
                 <h1>Hey, I'm Vladyslav Braslavskyi 👋</h1>
                 <p>
-                    I'm a computer science graduate with 3 years of development experience.<br />
+                    I'm a Backend Developer with 3 years of work experience.<br />
                     My passion is crafting innovative and user-friendly apps for various platforms.
                 </p>
                 <div className="social-icons">
