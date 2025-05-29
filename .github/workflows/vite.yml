@@ -1,4 +1,3 @@
-# .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
 on:
@@ -30,7 +29,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+      - name: Set remote URL with token
+        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+
       - name: Deploy to GitHub Pages
         run: npm run deploy
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
