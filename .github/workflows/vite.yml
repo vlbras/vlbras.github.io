@@ -1,19 +1,19 @@
-name: Deploy to GitHub Pages
+name: Deploy to GitHub Pages (User Site)
 
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 18
@@ -29,8 +29,8 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Set remote URL with token
-        run: git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+      - name: Set remote URL using Personal Access Token
+        run: git remote set-url origin https://x-access-token:${{ secrets.GH_PAGES_DEPLOY_TOKEN }}@github.com/vlbras/vlbras.github.io.git
 
       - name: Deploy to GitHub Pages
         run: npm run deploy
