@@ -1,5 +1,14 @@
 {
   "name": "vl-vite-book-portfolio",
+  "author": "vlbras",
+  "description": "A portfolio website built with React and Vite, showcasing books and reading lists.",
+  "keywords": [
+    "portfolio",
+    "react",
+    "vite",
+    "books",
+    "reading lists"
+  ],
   "private": true,
   "version": "0.0.0",
   "type": "module",
